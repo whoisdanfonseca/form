@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	background:#f4de5b;
+	font:"Lato";
+	color:white; 
+}
+
+#container{
+	margin:auto;
+	border: 5px solid white;
+	border-radius:30px;
+	min-width: 300px;
+    max-width: 600px;
+    padding: 15px 35px 35px 35px;
+}
+
+h1,h2,h3{
+	color:#4c4c4c;
+}
+
+div{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+#submit{
+	background-color: #ed635f;
+	color:white;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+#less{
+	float:left;
+	display:inline;
+	padding-left:10px;
+}
+
+#more{
+	float:right;
+	display:inline;
+	padding-right:10px;
+}

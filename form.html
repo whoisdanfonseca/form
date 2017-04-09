@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="form.js"></script>
+</head>
+
+<body>
+<div id="container" class="w3-panel">
+
+<h1>FORMZZZ ¯\_(ツ)_/¯</h1>
+
+<p>the idea is that you select some variables, press a button, and get a custom shape.</p>
+<p>i'm also playing around with different input types. i like the slider. </p>
+
+<div>
+  <h3>1. name (input form)</h3>
+  <form class="w3-container">
+    <input class="w3-input" type="text" placeholder="name">
+  </form>
+</div>  
+
+<div class="w3-row-padding">
+  <h3>2. shape color (radio)</h3>
+  <form>
+    <div class="w3-third">
+      <input class="w3-radio" type="radio" name="Color" value="red" /> red <br>
+    </div> 
+    <div class="w3-third">
+      <input class="w3-radio" type="radio" name="Color" value="blue" /> blue <br>
+    </div>
+    <div class="w3-third">
+      <input class="w3-radio" type="radio" name="Color" value="green" /> green <br>
+    </div>  
+  </form>
+</div>
+
+<div>
+  <h3>3. shape size (drop down)</h3>
+  <select class="w3-select" name="size">
+    <option value="" disabled selected>pick a size silly</option>
+    <option value="small">small</option>
+    <option value="medium">medium</option>
+    <option value="large">large</option>
+    <option value="fuckin yuge">fuckin yuge</option>
+  </select>
+</div>
+
+<div>
+  <h3>4. shape number (number)</h3>
+  <form>
+    <p>how many shapes would you like?</p>
+    <input class="w3-input w3-border" type="number" name="quantity" min="1" max="5" placeholder="1-5"> <br>
+  </form>
+</div>
+
+<div>
+  <h3>5. shape opacity (slider)</h3>
+  <form>
+    <input class="w3-input w3-border" type="range" name="points" min="1" max="5"> <br>
+    <label id="less"><i><- less</i></label>
+    <label id="more"><i>more -></i></label>
+  </form>
+</div>
+<br>
+
+<button id="submit" class="w3-button w3-round-xlarge w3-xxlarge">submit</button>
+
+<div>
+  <h2>(name's) shape</h2>
+  <p>below's div is where we pass the form values into a function and a cool shape appears.</p>
+  <div id="shape"></div>
+</div>
+
+</div>
+</body>
+</html>
